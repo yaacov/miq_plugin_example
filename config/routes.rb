@@ -6,4 +6,8 @@ Rails.application.routes.draw do
   get "demo/show(/:id)", controller: 'demo', action: 'show'
   get "demo/show_list(/:id)", controller: 'demo', action: 'show_list'
   get "demo/report_data", controller: 'demo', action: 'report_data'
+
+  namespace :plugin_json do
+    resources :mohawk
+  end
 end

@@ -4,7 +4,7 @@ class DemoController < ApplicationController
   after_action :cleanup_action
   after_action :set_session_data
 
-  #include Mixins::GenericButtonMixin
+  include Mixins::GenericButtonMixin
   include Mixins::GenericListMixin
   include Mixins::GenericSessionMixin
   include Mixins::GenericShowMixin
@@ -12,7 +12,8 @@ class DemoController < ApplicationController
   def textual_group_list
     [%i(properties tags), %i(relationships)]
   end
-  helper_method :textual_group_list
+
+  #helper_method :textual_group_list
 
   def self.display_methods
     %w(cloud_subnets floating_ips security_groups)
