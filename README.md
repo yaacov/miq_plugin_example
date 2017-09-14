@@ -59,4 +59,4 @@ Run the migration. Add a row or 2 to the table. Run `./bin/webpacker` in managei
 Leave a PR.
 
 ## License
-The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
+The gem is available as open source under the terms of the [Apache License 2.0](https://opensource.org/licenses/apache-2.0).
